@@ -1,0 +1,41 @@
+{
+    "cli": {
+        "version": ">= 7.2.0",
+        "appVersionSource": "remote"
+    },
+    "build": {
+        "development": {
+            "extends": "qa",
+            "developmentClient": true,
+            "distribution": "internal",
+            "ios": {
+                "resourceClass": "m-medium"
+            },
+            "channel": "development"
+        },
+        "qa": {
+            "distribution": "internal",
+            "ios": {
+                "resourceClass": "m-medium"
+            },
+            "channel": "qa"
+        },
+        "staging": {
+            "distribution": "internal",
+            "ios": {
+                "resourceClass": "m-medium"
+            },
+            "channel": "staging"
+        },
+        "production": {
+            "autoIncrement": true,
+            "channel": "production",
+            "cache": {
+                "disabled": true
+            }
+        }
+    },
+    "submit": {
+        "production": {}
+    }
+}

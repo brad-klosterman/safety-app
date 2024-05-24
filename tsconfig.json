@@ -1,0 +1,24 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@api": ["app/api"],
+      "@state": ["app/app.state"],
+      "@events": ["app/EventManager"],
+      "@navigation": ["app/navigation"],
+      "@navigation/*": ["app/navigation/*"],
+      "@screens": ["app/screens"],
+      "@screens/*": ["app/screens/*"],
+      "@theme": ["app/theme"],
+      "@theme/*": ["app/theme/*"],
+      "@components": ["app/components"],
+      "@components/*": ["app/components/*"],
+      "@utils": ["app/utils"],
+      "@utils/*": ["app/utils/*"],
+      "@device": ["app/utils/device"]
+    },
+    "typeRoots": ["./app/types", "./node_modules/@types"]
+  }
+}
