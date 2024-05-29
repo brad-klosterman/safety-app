@@ -66,7 +66,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
             },
             googleServicesFile: './GoogleService-Info.plist',
             config: {
-                googleMapsApiKey: 'AIzaSyDeGijp2n3sy86kIhg7ZMO6Ze0Vemwskvc',
+                googleMapsApiKey: '',
             },
         },
         androidNavigationBar: {
@@ -83,7 +83,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
             softwareKeyboardLayoutMode: 'pan',
             config: {
                 googleMaps: {
-                    apiKey: 'AIzaSyBrTVITfvr70HIvK5rmJ7mDrthhsYLZaZ4',
+                    apiKey: '',
                 },
             },
             googleServicesFile: './google-services.json',
