@@ -137,7 +137,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         extra: {
             ...env_variables,
             eas: {
-                projectId: 'a719af1d-e429-46d4-935f-02991458896f',
+                projectId: '',
             },
         },
     };
