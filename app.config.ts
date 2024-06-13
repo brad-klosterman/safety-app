@@ -14,12 +14,12 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     if (BUILD_PROFILE === 'production' || BUILD_PROFILE === 'staging') {
         env_variables = {
             BUILD_PROFILE,
-            SEON_API_URL: 'https://api.seon.network/api/v3/mobile',
+            SEON_API_URL: '',
         };
     } else {
         env_variables = {
             BUILD_PROFILE,
-            SEON_API_URL: 'https://api.staging.seon.network/api/v3/mobile',
+            SEON_API_URL: '',
         };
     }
 
